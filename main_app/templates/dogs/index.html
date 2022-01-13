@@ -5,7 +5,7 @@
 
 {% for dog in dogs %}
   <div class="card">
-    <a href="{% url 'dogs_index' dog.id %}"></a>
+    <a href="{% url 'dogs_detail' dog.id %}">
       <div class="card-content">
         <span class="card-title">{{ dog.name }}</span>
         <p>Breed: {{ dog.breed }}</p>
